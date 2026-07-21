@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <errno.h>
 
 int main()
 {
-    unsigned int x = 5;
+    double x = 5.0;
     unsigned int y = -5;
 
-    printf("x:%u, y:%u", x, y);
+    printf("%d", errno);
+    //printf("x:%f, y:%u", x, y);
     return 0;
 }
