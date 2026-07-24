@@ -23,7 +23,19 @@ int main()
     if ('F' > 'A')
     {
 
-        printf("\n%d", 1000);
+        printf("\n%d", 'a' - 'a');
     }
+    printf("\n\n");
+
+    char str[] = {'a', 'b', 'c', 'd', '\0'};
+    char* ptr_str = &str[0];
+    char* temp_ptr = ptr_str;
+    ptr_str = ptr_str+4-1;
+    
+    *ptr_str = 'a';
+    ptr_str = temp_ptr;
+
+    printf("%s", ptr_str);
+    
     return 0;
 }
