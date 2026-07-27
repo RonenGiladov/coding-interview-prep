@@ -56,9 +56,19 @@ int string_compare(const char* str1, const char* str2)
 
 }
 
+
+int string_compare_final_version(const char* str1, const char* str2)
+{
+    assert(str1!=NULL && str1!=NULL);
+
+    for (; *str1 == *str2 && *str1 != '\0'; str1++,str2++);
+
+    return *str1 - *str2;
+}
+
 int main()
 {
     char str1[] = {'F', 'a', 'n', '\0'}, str2[] = {'F', 'u', 'n', '\0'};
-    printf("%d", string_compare(str1, str2));
+    printf("%d", string_compare_final_version(str1, str2));
     return 0;
 }

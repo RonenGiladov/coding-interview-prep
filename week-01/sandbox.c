@@ -36,6 +36,39 @@ int main()
     ptr_str = temp_ptr;
 
     printf("%s", ptr_str);
+
+    printf("\n\n----------\n\n");
+
+    int foo = 7;
+    char bar = 'h';
+        char* test_ptr = &str;
+        printf("%c", *(test_ptr + 2));
+    if (foo != bar)
+    {
+        printf("aaa");
+    }
     
+    for (size_t i = 0; i < 5; i++)
+    {
+        for (size_t j = 0; j < 5; j++)
+        {
+            if (i == 2)
+            {
+                break;
+            }
+            printf("\nj: %d", j);
+        }
+        
+        printf("\n\n%d", i);
+    }
+
+
+    int arr4by4[4][4] = {{1,2,3,4},
+                      {5,6,7,8},
+                      {9,10,11,12},
+                      {13,14,15,16}};
+    
+    printf("\n%d", arr4by4[1][2]);
+   
     return 0;
 }
