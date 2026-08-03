@@ -48,6 +48,8 @@ int main()
 {
     char str[] = {'a', 'b', 'c', '1', '2', '3', '\0'}; 
     const char* str2 = "abc123";
-    printf("%d\n", string_to_integer(str));
-    printf("%d", string_interger_to_integer(str2));
+    printf("%d\n\n", string_to_integer(str));
+    printf("%d\n\n\n", string_interger_to_integer(str2));
+    
+    return 0;
 }

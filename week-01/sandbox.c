@@ -70,5 +70,17 @@ int main()
     
     printf("\n%d", arr4by4[1][2]);
    
+    char str_test[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'};
+    char* str_test2 = "abcdefghijklmnopqrstuvwxyz";
+    printf("%s" ,str_test2 );
+
+    int i = 0;
+
+    for (i = 0; i < 10; i++)
+    {
+        
+    }
+    printf("\ni: %d", i);
+
     return 0;
 }
